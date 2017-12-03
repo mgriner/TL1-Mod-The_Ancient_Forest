@@ -1,0 +1,44 @@
+material graverobber/graverobber01
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.588 0.588 0.588
+			diffuse 0.588 0.588 0.588
+			specular 0 0 0 0
+			emissive 0.4 0.4 0.4
+			scene_blend alpha_blend
+			alpha_rejection greater 5
+			texture_unit
+			{
+				texture graverobber01.dds
+				texture graverobber01.png
+			}
+		}
+	}
+}
+material graverobber/graverobber03
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.737255 0.737255 0.737255
+			diffuse 0.737255 0.737255 0.737255
+			specular 0 0 0 0
+			emissive 0.4 0.4 0.4
+			texture_unit
+			{
+				texture graverobber03.dds
+				texture graverobber03.png
+			}
+			texture_unit
+			{
+				texture graverobber03illum.dds
+				texture graverobber03illum.png
+				colour_op add
+			}
+		}
+	}
+}
